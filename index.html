@@ -56,37 +56,11 @@
             bottom: 0;
             width: 100%;
         }
-        #secure-prompt {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: none;
-        }
-        #secure-prompt button {
-            margin: 5px;
-            padding: 5px 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        #secure-prompt button#yes {
-            background-color: #6200ea;
-            color: white;
-        }
-        #secure-prompt button#no {
-            background-color: #ccc;
-            color: black;
-        }
     </style>
 </head>
 <body>
     <header>
-        <img src="./img/icon.png" alt="Icon"> <h1>Yo!, Welcome.</h1>
+       <img src="./img/icon.png" alt="Icon"> <h1>Yo!, Welcome.</h1>
         <p>It's just me. nobody else...</p>
     </header>
     <nav>
@@ -119,27 +93,8 @@
             </ul>
         </section>
     </div>
-    <div id="secure-prompt">
-        <p>Feeling this Website's Not Secure?</p>
-        <button id="yes">Yes</button>
-        <button id="no">No</button>
-    </div>
     <footer>
         <p>Copyright &copy; M Harsha Deepan 2025.</p>
     </footer>
-    <script>
-        if (window.location.protocol === 'http:' && window.location.hostname === 'harshadeepan.ix.tc') {
-            const prompt = document.getElementById('secure-prompt');
-            prompt.style.display = 'block';
-
-            document.getElementById('yes').addEventListener('click', () => {
-                window.location.href = 'https://deepanharsha.github.io';
-            });
-
-            document.getElementById('no').addEventListener('click', () => {
-                prompt.style.display = 'none';
-            });
-        }
-    </script>
 </body>
 </html>
