@@ -2,52 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/icon.png">
-    <title>Harsha Deepan - Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsha Deepan</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        .header {
-            background-color: #f1f1f1;
-            padding: 20px;
+        header {
+            background-color: #6200ea;
+            color: #fff;
+            padding: 1rem 2rem;
             text-align: center;
         }
-        .menu {
-            overflow: hidden;
-            background-color: #333;
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: #3700b3;
         }
-        .menu a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
+        nav a {
+            color: white;
             text-decoration: none;
+            font-weight: bold;
         }
-        .menu a:hover {
-            background-color: #111;
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #6200ea;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-
-    <div class="menu">
-        <a href="./">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./projects.html">Projects</a>
-        <a href="#" onclick="togglePopup()">Contact</a> 
+    <header>
+        <h1>Yo!, Welcome.</h1>
+        <p>It's just me. nobody else...</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>Hello! I'm Harsha!, a Coder & Gamer.</p>
+        </section>
+        <section id="portfolio" class="card">
+            <h2>Portfolio</h2>
+            <p>Here's some of the work I've done:</p>
+            <ul>
+                <li><a href="https://github.com/deepanharsha/DisCam">DisCam</a></li>
+                <li><a href="https://discam.vercel.app/app/?from:creatorweb">DisCam WebApp</a></li>
+                <li><a href="https://github.com/hdcodesOfficial/ProjectYTGet">ProjectYTGet</a></li>
+            </ul>
+        </section>
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, you can reach me at:</p>
+            <ul>
+                <li>Email: <a href="mailto:harshadeepan11@gmail.com">harshadeepan11@gmail.com</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/harsha_uchiha11">@harsha_uchiha11</a></li>
+                <li>X (Twitter): <a href="https://x.com/NightReigner">@NightReigner</a></li>
+            </ul>
+        </section>
     </div>
-
-    <div class="header">
-        <h1>Harsha Deepan - Website</h1>
-    </div>
-    <div>
-        <p>Yo! how ya doin'? its just me. and this webpage is: <br></p>
-        <h3>COMING SOON...</h3>
-    </div>
+    <footer>
+        <p>Copyright &copy; M Harsha Deepan 2025.</p>
+    </footer>
 </body>
 </html>
